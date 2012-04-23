@@ -437,9 +437,9 @@ public abstract class SamlddCertificate extends Certificate {
 		XMLObjectBuilder builder = Configuration
 				.getBuilderFactory().getBuilder(objectQName);
 		if (builder != null) {
-			System.err.println("cannot build " + objectQName);
 			return builder.buildObject(objectQName);
 		}
+		System.err.println("cannot build " + objectQName);
 		return null;
 	}
 
