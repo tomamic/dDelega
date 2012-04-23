@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="Test-_752cc91237677a05f4a079a7dd718c2a" IssueInstant="2006-11-10T11:00:00.000Z" Version="2.0"><saml:Issuer>MD5:aU+xBe6Pi//bSbAZMMmXvw==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#Test-_752cc91237677a05f4a079a7dd718c2a" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xs"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">RtVyq2X0KpCy7PraaUID4ZxF1M5btOZTWmHbdtLrZQ8=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+RVQJ0JtGACXHILH6VJ1uNMw0loU7hFqIc/iGRD6ljjQnwP2qKqahgs0YnWX7bnv4zsLsc1sTwExj
+Bk3/BEENgd8srKwRtKlss7g4NfZuTK5Wy03xVcYpOuCZmr2Zd1kj7Hd6rPFuWslf/PWGHS6dkWQN
+5pvS9KOU5+Ahu69mOmw=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+pzM9zl221WJUE3JYJe/nO7G+G7WgERqguV3KaJeiZmiQYGjx1cHsjBXSJYznWuUXQJ1mpTuAN0Fq
+pq9GcDHryOPTDXPK8PgzYE1EoYlwGoOg4qDMzKkFMs8S+RHHu/J6yGi3RwrmK3fs1es7wjJGylJy
+wkI+9u+maWp4/DHvtKs=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><saml:Subject><saml:NameID NameQualifier="MD5:kXn8dsd9irpJm3/j6epdCQ==">Ricercatore</saml:NameID></saml:Subject><saml:AttributeStatement><saml:Attribute Name="NameID"><saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Collega</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>

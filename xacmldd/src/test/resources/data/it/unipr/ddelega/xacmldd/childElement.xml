@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xacml-saml:XACMLPolicyStatement xmlns:xacml-saml="urn:oasis:names:tc:xacml:2.0:saml:assertion:schema:os">
+	<Policy PolicyId="XACMLTest-0001" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+		<Target>
+			<Subjects>
+				<Subject>
+					<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+						<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:key-hash-made-by-md5-algorithm</AttributeValue>
+						<SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:subject:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+					</SubjectMatch>
+				</Subject>
+			</Subjects>
+			<Resources>
+				<Resource>
+					<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+						<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">UpLaserPrinter</AttributeValue>
+						<ResourceAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+					</ResourceMatch>
+				</Resource>
+			</Resources>
+		</Target>
+		<Rule RuleId="RULE-0001" Effect="Permit" />
+	</Policy>
+</xacml-saml:XACMLPolicyStatement>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="RoleTest-_33240561baa4368bce49c7d60b9ac6b4" IssueInstant="2007-01-16T13:56:18.690Z" Version="2.0"><saml:Issuer>MD5:8jkUkNKKLQfw/iTX9TgtTg==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#RoleTest-_33240561baa4368bce49c7d60b9ac6b4" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xacml-saml"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">9YviYOrbyUjkgWVMkf3evRm9sv+xaB4IByCgFFsAeqM=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+jZtPoP6YYdsqsbYkOpDmZySuR+dVNBbF/lLn20zL12zRYk3qIuzQ4qw9xKmPzad/0dEm0zkVdr7O
+u1REi9B42Xs/sFDBHRd0Q99jIUY6alcIUTR4ERaqI1tqZ461XjD2y+XfR8Rannze60+YP9i3mkCB
+nOp2IsX/zeyYRsx48vs=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+lATW4Th+xsc0TJpoFlM55tQYZLK0jmctZWc4qZL6gXM/qTd3RnRjek6YmJCehXplICbITnSzoLWW
+eud9k68DE5BWy3VNTNoENZk4QkG/MH5BvL30EiZ1k6oZAKDVe43VhhbKZkD28L7gxc1AolHoJS4G
+EwZcRDicjzpclDVSLfE=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><xacml-saml:XACMLPolicyStatement xmlns:xacml-saml="urn:oasis:names:tc:xacml:2.0:saml:assertion:schema:os"><Policy PolicyId="policy:_1c9fed8e515853bb7c39550442aee3d0" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+<Target>
+<Subjects>
+<Subject>
+<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:Yy+Zo6q4OUCdjgxq5bQCAQ==</AttributeValue>
+<SubjectAttributeDesignator AttributeId="org:spki:role:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</SubjectMatch>
+<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:8jkUkNKKLQfw/iTX9TgtTg== amici</AttributeValue>
+<SubjectAttributeDesignator AttributeId="org:spki:role:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</SubjectMatch>
+</Subject>
+</Subjects>
+<Resources>
+<Resource>
+<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:regexp-string-match">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">/home/mackdk/Documenti/Musica/*.m4a</AttributeValue>
+<ResourceAttributeDesignator AttributeId="org:spki:role:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ResourceMatch>
+</Resource>
+<Resource>
+<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:regexp-string-match">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">/home/mackdk/Documenti/Musica/*.mp3</AttributeValue>
+<ResourceAttributeDesignator AttributeId="org:spki:role:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ResourceMatch>
+</Resource>
+<Resource>
+<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:regexp-string-match">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">/home/mackdk/Documenti/Musica/*.ogg</AttributeValue>
+<ResourceAttributeDesignator AttributeId="org:spki:role:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ResourceMatch>
+</Resource>
+</Resources>
+<Actions>
+<Action>
+<ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Download</AttributeValue>
+<ActionAttributeDesignator AttributeId="org:spki:role:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ActionMatch>
+</Action>
+</Actions>
+</Target>
+<Rule Effect="Permit" RuleId="policy:rule:_044449f432ce72c4a53ea850306cfc20"/>
+</Policy></xacml-saml:XACMLPolicyStatement><saml:AttributeStatement><saml:Attribute Name="Delegate" trust="75"/></saml:AttributeStatement></saml:Assertion>

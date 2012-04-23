@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xacml-saml:XACMLPolicyStatement xmlns:xacml-saml="urn:oasis:names:tc:xacml:2.0:saml:assertion:schema:os">
+	<Policy PolicyId="XACMLTest-0001" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+		<Target>
+			<Subjects>
+				<Subject>
+					<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+						<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:key-hash-made-by-md5-algorithm</AttributeValue>
+						<SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:subject:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+					</SubjectMatch>
+				</Subject>
+			</Subjects>
+			<Resources>
+				<Resource>
+					<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+						<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">UpLaserPrinter</AttributeValue>
+						<ResourceAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />			
+					</ResourceMatch>
+				</Resource>
+			</Resources>
+		</Target>
+		<Rule RuleId="RULE-0001" Effect="Permit" />
+	</Policy>
+	<PolicySet PolicySetId="XACMLTest-0002" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:1.0:policy-combining-algorithm:first-applicable">
+		<Target>
+			<Resources>
+				<Resource>
+					<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:regexp-string-match">
+						<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">C:\\File Condivisi\\Lavoro\\*</AttributeValue>
+						<ResourceAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:resource:file-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+					</ResourceMatch>
+				</Resource>
+			</Resources>
+		</Target>
+		<Policy PolicyId="XACMLTest-0003" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+			<Target>
+				<Subjects>
+					<Subject>
+						<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+							<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:key-hash-made-by-md5-algorithm</AttributeValue>
+							<SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:subject:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+						</SubjectMatch>
+						<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+							<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">SHA1:key-hash-made-by-sha1-algorithm</AttributeValue>
+							<SubjectAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:subject:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+						</SubjectMatch>
+					</Subject>
+				</Subjects>
+				<Actions>
+					<Action>
+						<ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+							<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Read</AttributeValue>						
+							<ActionAttributeDesignator AttributeId="urn:oasis:names:tc:xacml:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true" />
+						</ActionMatch>
+					</Action>
+				</Actions>
+			</Target>
+			<Rule RuleId="RULE-0002" Effect="Permit" />
+		</Policy>
+	</PolicySet>
+</xacml-saml:XACMLPolicyStatement>

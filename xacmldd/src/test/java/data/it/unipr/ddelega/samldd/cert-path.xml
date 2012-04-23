@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="Test-_c69a6d60437c9b09a4da51f2441e0970" IssueInstant="2006-10-31T14:33:15.000Z" Version="2.0"><saml:Issuer>MD5:7I46tknj6XPV++TGbjDbWA==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#Test-_c69a6d60437c9b09a4da51f2441e0970" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xs"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">Ek597hZeLKki8Kpw49t1ognUlrERvRqt/oBx+X0GzGk=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+ai6rH4tPuYVBiclUlQAMOpA5aMdEosSOyEKRz1ZHPmTGgBzV1j2bK7vkd+ZliRpRoAJM22X123jy
+TbcTYNSp2t/0qEwbAJoiqMpRFdsIOOUvxQroSBWiKRlWved+8pbmgP53pUYVyK0uSR7B5vT0OKPB
+XY2eZizqW4/oFMWMQK4=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+gbG0lm+0ljbJWN6wEbDKWkCPkSvYga1aO+vJv9hAC+RXl9lcp2+yZfw6h6FAF23h6DGlYCedPUv0
+9gWqHthCRVQ419t4wIPcfsANQFaurgkzG4EgDvIhNsDWObjeJX9UIJvw3zKcUZOBnTUU+p8bCjQD
+uRV06CbD41aj30Ya+o0=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><saml:Subject><saml:NameID NameQualifier="MD5:zA+DsSl4GDGrArrMPXaujQ==">Collega</saml:NameID></saml:Subject><saml:AttributeStatement><saml:Attribute Name="NameID"><saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Dipendente</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>
+<!-- SPKI NAME CERTIFICATE BEGIN -->
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="Test-_1fcba5a26b96521d5c3327301458a3c1" IssueInstant="2006-11-10T11:00:00.000Z" Version="2.0"><saml:Issuer>MD5:zA+DsSl4GDGrArrMPXaujQ==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#Test-_1fcba5a26b96521d5c3327301458a3c1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xs"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">Inmr4UqyJL0WmBtm/1xmkF4alVOsWbGup7YcbWwHCdY=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+hW6MWi+wN14CEzGyquFhaLmNRAMlTkNC33ZZAZGW5h/xK9sSPLfdxeNx4LPbaOMYnBPYDLghELO8
+PstHyZERzH1lN2LcIA0p7mqAaeCg6qev0NUonbirYPKASFMgVgoX8Ou5i2TGtJ8p7Ras2FlWNVHA
+P9ASVnqLMylZZhbZ+y4=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+s7xVhvO+25+GSbUKcCNQMWG+zbqZPi6+oDcu4GeP5nNfmMw4qAi39xug/4sHvPZ73fWmje3COfIW
+Q3Pvow16GKvt0tAoWPvU1steBqngpoq6MIc7XMY2jYp43O0To+VDauHlxb1+kAkL33B7de4L82OR
+qqLn4RG4o5CSGKsj0ks=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><saml:Subject><saml:NameID NameQualifier="MD5:Nk4c8DBxDDVsNWhqFsUoIA==">Ricercatore</saml:NameID></saml:Subject><saml:AttributeStatement><saml:Attribute Name="NameID"><saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Collega</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>
+<!-- SPKI NAME CERTIFICATE BEGIN -->
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="Test-_50daf9806e68361fd7cefa2bd8c0c7bd" IssueInstant="2006-11-20T17:00:00.000Z" Version="2.0"><saml:Issuer>MD5:Nk4c8DBxDDVsNWhqFsUoIA==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#Test-_50daf9806e68361fd7cefa2bd8c0c7bd" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xs"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">BCCdVExtsz86oPG4OwGw484l4BQ5P21oEaA90q/OuGA=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+kqIhq4+Z+G6enFXi7gFkGNW3EPegBfL8FLXPdTbzKY7JOg236nlTTtYzWCUbd4in7jY1My7GG7C/
+ATQlqFkzrGyf37pxZ/ySjqafnTae/E7vg5pbB4rqsnsL/qaZO5El6/zYsSBOa2N5UQingZS2OuIt
+F7IY8XWa6f+hoPzaHKo=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+mOrC6+zJQWSQ+SIwSyKFLTaMNJJvGaqfkXTS2j4kt+8ivisldAteVEnBS5BKRt4Sj/f729bxxxYt
+3d7yElH+pGQYjXFA58Peaiisuj2HVdXHJA5TllQ0m8KZNzvmhOY6yp2yxKs9L5vnV3wlon4wMaYz
+3TxhV9WRVa1pzUTH3D8=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><saml:Subject><saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:holder-of-key"><saml:SubjectConfirmationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="saml:KeyInfoConfirmationDataType"><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+rKBxuAKWCDs1bXQ/Jfg9yDSzlB8EMquNyHcI9c02mZC/LkiFmjZw8q/VnT1wYj3qJgZXvRUPSPGq
+Hu+pjJ75FrGiR4IU1pB87jH58XxnKAczfs7RpCJbDCzM/89XgvjG6f92zJtS26TUwjXL6mp7fwe3
+FI6c86M7IuEA2r2vlvs=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo></saml:SubjectConfirmationData></saml:SubjectConfirmation></saml:Subject><saml:AttributeStatement><saml:Attribute Name="NameID"><saml:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Ricercatore</saml:AttributeValue></saml:Attribute></saml:AttributeStatement></saml:Assertion>

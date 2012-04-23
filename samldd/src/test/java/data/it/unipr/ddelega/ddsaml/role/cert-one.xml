@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><saml:Assertion xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" ID="RoleTest-_e1b86f61c57aaa606be2ab721187e338" IssueInstant="2007-01-16T13:56:16.906Z" Version="2.0"><saml:Issuer>MD5:K3yoOJGi/BtjD4zkOzd5GA==</saml:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Reference URI="#RoleTest-_e1b86f61c57aaa606be2ab721187e338" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transforms xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="ds saml xacml-saml"/></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"/>
+<ds:DigestValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">laMhXYjf35aFQ9yfMrKX0R80KIOwdVEdCmLQt6la55I=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+RClozJv0Ktb1dJUolVmTF7Bisn+HZ1GO6/SiODnVOIWYTGrEEH4FMjtQ8rjqVnJ1eyn8Gjw2XBDy
+JRS5rR9rikKCUETa391Bt/+6GE+xUZ1dTX87rraRE69VaPc/P+G0/hEL8aI55mxd8qiTGAaZVhL9
+sHnSDPHdj9tk07CiWaY=
+</ds:SignatureValue>
+<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:RSAKeyValue xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:Modulus xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+y5npZogYfw1iGHA8dhFCDEgo1U/LEKX9dhmsNjgd6gfYLYh5T+9oEPOly9uzlsy5mqjrshGZKLn4
+jTVJLd6BpSH92IU47lgngCPbX8PgfRV9Tv0wrqFWMbgWQPGuj36dx5W+OghRYeS0ZQJK09PYFdAv
+uOVZJg++/U/p5ICSnzU=
+</ds:Modulus>
+<ds:Exponent xmlns:ds="http://www.w3.org/2000/09/xmldsig#">AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+</ds:Signature><xacml-saml:XACMLPolicyStatement xmlns:xacml-saml="urn:oasis:names:tc:xacml:2.0:saml:assertion:schema:os"><Policy PolicyId="policy:_da08f500f4f6975eb6f6450cc8faa03f" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:deny-overrides">
+<Target>
+<Subjects>
+<Subject>
+<SubjectMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MD5:K3yoOJGi/BtjD4zkOzd5GA== colleghi</AttributeValue>
+<SubjectAttributeDesignator AttributeId="org:spki:role:subject-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</SubjectMatch>
+</Subject>
+</Subjects>
+<Resources>
+<Resource>
+<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:regexp-string-match">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">/home/mackdk/Documenti/lavoro/*</AttributeValue>
+<ResourceAttributeDesignator AttributeId="org:spki:role:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ResourceMatch>
+</Resource>
+</Resources>
+<Actions>
+<Action>
+<ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Read</AttributeValue>
+<ActionAttributeDesignator AttributeId="org:spki:role:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ActionMatch>
+</Action>
+<Action>
+<ActionMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Write</AttributeValue>
+<ActionAttributeDesignator AttributeId="org:spki:role:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+</ActionMatch>
+</Action>
+</Actions>
+</Target>
+<Rule Effect="Permit" RuleId="policy:rule:_07173a266c0b20a5e67b392128297ef2">
+<Description>Permette la lettura e la scrittura da parte dei miei colleghi nella cartella lavoro</Description>
+</Rule>
+</Policy></xacml-saml:XACMLPolicyStatement><saml:AttributeStatement><saml:Attribute Name="Delegate"/></saml:AttributeStatement></saml:Assertion>
