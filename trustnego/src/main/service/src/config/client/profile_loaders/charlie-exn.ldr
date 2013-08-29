@@ -1,0 +1,9 @@
+loaderClass = pkg.edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = CN=Bob,O=Acme Springfield,C=USA
+subject = CN=Charlie,O=Acme Springfield,C=USA
+attr1 = Type
+value1 = Exception
+attr2 = Project
+value2 = Project X
+rid = exn_uncert
+pid = policy_springfield_service

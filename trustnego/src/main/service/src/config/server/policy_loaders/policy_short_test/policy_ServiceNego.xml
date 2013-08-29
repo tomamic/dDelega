@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+	<wsp:ExactlyOne>
+		<wsp:All>
+			<sp:X509Token xmlns:wsa="http://www.w3.org/2005/08/addressing">
+				<sp:IssuerName>
+				CN=Acme Fabrication,O=Acme Fabrication,ST=Some-State,C=US
+				</sp:IssuerName>
+				
+			</sp:X509Token>
+			
+		</wsp:All>
+	</wsp:ExactlyOne>
+</wsp:Policy> 

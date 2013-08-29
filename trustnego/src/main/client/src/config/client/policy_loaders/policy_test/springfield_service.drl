@@ -1,0 +1,18 @@
+package pkg
+
+import pkg.edu.uiuc.cs.TrustBuilder2.messages.X509CredentialBrick;
+
+
+rule "nameRequired"
+
+when
+$cert1 : X509CredentialBrick( getIssuer() == "CN=Acme Fabrication,O=Acme Fabrication,ST=Some-State,C=US")
+$credList: java.util.ArrayList()
+
+then
+
+ $credList.add($cert1);
+  
+  
+
+end

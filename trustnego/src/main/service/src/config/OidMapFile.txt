@@ -1,0 +1,6 @@
+# OID map file for the example application
+
+1.2.3.4.1 = Type
+1.2.3.4.2 = EmpType
+1.2.3.4.3 = Org
+1.2.3.4.5 = Project

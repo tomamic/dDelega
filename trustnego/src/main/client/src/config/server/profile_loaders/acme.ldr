@@ -1,0 +1,4 @@
+loaderClass = edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = O=Acme Fabrication,C=USA
+subject = O=Acme Fabrication,C=USA
+rid = acme_uncert

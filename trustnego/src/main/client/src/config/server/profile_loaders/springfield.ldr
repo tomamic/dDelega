@@ -1,0 +1,6 @@
+loaderClass = edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = O=Acme Fabrication,C=USA
+subject = O=Acme Springfield,C=USA
+attr1 = Type
+value1 = Branch Office
+rid = springfield_uncert

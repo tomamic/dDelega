@@ -1,0 +1,6 @@
+loaderClass = edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = O=Acme Springfield,C=USA
+subject = CN=File Service,O=Acme Springfield,C=USA
+attr1 = Type
+value1 = Service
+rid = service_uncert

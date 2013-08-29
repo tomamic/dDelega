@@ -1,0 +1,27 @@
+# Loads Charlie's certificates
+#
+# Note that all relative paths are relative to the TrustBuilder2
+# working directory
+
+# Set the loader class
+loaderClass = edu.uiuc.cs.TrustBuilder2.query.profile.X509FlatFileLoader
+
+
+# Second cred is the Acme Springfield intermediate cert
+certificate_file_1 = src\\config\\server\\profile_loaders\\springfield.cer
+oid_map_1 = 1.2.3.4.1, Type;
+rid_1 = x509_springfield
+
+
+# First cred is the Acme root cert with no private key
+certificate_file_2 = src\\config\\server\\profile_loaders\\acme.cer
+oid_map_2 = 
+rid_2 = x509_acme
+
+# Third cred is the Springfield service with private key
+certificate_file_3 = src\\config\\server\\profile_loaders\\service.cer
+private_key_file_3 = C:\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\server\\profile_loaders\\service.key
+oid_map_3 = 1.2.3.4.1, Type;
+rid_3 = x509_service
+
+

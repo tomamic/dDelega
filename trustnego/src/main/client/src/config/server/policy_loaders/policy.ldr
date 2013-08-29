@@ -1,0 +1,4 @@
+loaderClass = edu.uiuc.cs.TrustBuilder2.query.policy.JessPolicyFlatFileLoader
+preamble_1 = preamble.clp
+policy_1 = policy_project_x.clp
+rid_1 = policy_project_x

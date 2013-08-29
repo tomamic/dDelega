@@ -1,0 +1,133 @@
+# Configuration file for our example server program
+#
+
+# -------------------------------------------------------------
+# --------------- GENERIC TrustBuilder2 Options ---------------
+# -------------------------------------------------------------
+
+# TrustBuilder2 root directory.  This should contain a trailing
+# "/" (for unix and mac) or "\\" (for windows)
+pkg.edu.uiuc.cs.TrustBuilder2.TrustBuilder2.root = .\\
+
+# The properties file that log4j will use.  This is relative
+# to the above root path
+pkg.edu.uiuc.cs.TrustBuilder2.TrustBuilder2.log_config = ..\\..\\..\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\log.properties
+
+# The type of SecureRandom random number generator to use
+pkg.edu.uiuc.cs.TrustBuilder2.TrustBuilder2.SecureRandom = SHA1PRNG
+
+# A list of configuration options.  These are of the form:
+#   <strategy module class>;<credential class 1>, ..., 
+#   <credential class n>;<policy class 1>, ..., <policy class m>
+# Note that the numbers after the "configuration_" must start
+# with 1 and increment without skipping any numbers
+pkg.edu.uiuc.cs.TrustBuilder2.TrustBuilder2.configuration_1 = \
+  pkg.edu.uiuc.cs.TrustBuilder2.strategy.MaximumRelevantStrategy; \
+  pkg.edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredential; \
+  pkg.edu.uiuc.cs.TrustBuilder2.compliance.jess.JessPolicyBrick
+
+
+# ---------- IOManipulation Options start here ----------
+
+# is the IOManipulationModule enabled?
+pkg.edu.uiuc.cs.TrustBuilder2.IOManipulation.IOManipulationModule.enabled = false
+
+
+
+# ---------- State management options start here ----------
+
+# How long does an unused session last before it expires (in millis)?
+pkg.edu.uiuc.cs.TrustBuilder2.state.SessionManager.expire = 3600000
+
+# How often should we check for expired session objects (in millis)?
+pkg.edu.uiuc.cs.TrustBuilder2.state.SessionManager.cleanup = 120000
+
+
+
+
+# ---------- Strategy module keys go here ----------
+
+# Stuff for the StrategyModuleMediator
+#
+# This key loads the "Maximum Relevant Strategy" supplied with
+# TrustBuilder2.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.strategy.StrategyModuleMediator.loadStrategies = \
+  pkg.edu.uiuc.cs.TrustBuilder2.strategy.MaximumRelevantStrategy
+
+
+
+# ---------- Credential chain processing keys start here ----------
+
+# Keys for the CredentialChainMediator
+#
+# The first key loads a single credential chain verifier that verifies
+# credential chains starting at the chain root and working down the
+# chain to the leaf.  The second key loads a credential chain building
+# plug-in.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.verification.CredentialChainMediator.loadVerifiers = \
+  pkg.edu.uiuc.cs.TrustBuilder2.verification.RootToLeafVerifier
+pkg.edu.uiuc.cs.TrustBuilder2.verification.CredentialChainMediator.loadBuilders = \
+  pkg.edu.uiuc.cs.TrustBuilder2.verification.SimpleChainBuilder
+
+
+
+# ---------- Compliance checker keys start here ----------
+
+# Keys for the ComplianceCheckerMediator
+#
+# The first key loads the compliance checker for the Clouseau
+# language.  The second key is actually a key for that compliance
+# checker that tells it where to locate the base definitions file
+# discussed in Section 4 of the TrustBuilder2 user manual.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.compliance.ComplianceCheckerMediator.loadComplianceCheckers = \
+  pkg.edu.uiuc.cs.TrustBuilder2.compliance.jess.JessComplianceChecker
+pkg.edu.uiuc.cs.TrustBuilder2.compliance.jess.JessComplianceChecker.baseDefinitions = \
+  ..\\..\\..\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\jess\\jess_defs.clp
+
+
+
+# ---------- Query processing keys start here ----------
+
+# Keys for the QueryEngineMediator.  This loads the ProfileManager,
+# the NegotiationTargetMapper, and the PolicyManager
+#
+pkg.edu.uiuc.cs.TrustBuilder2.query.QueryEngineMediator.loadQueryEngines = \
+  pkg.edu.uiuc.cs.TrustBuilder2.query.profile.ProfileManager, \
+  pkg.edu.uiuc.cs.TrustBuilder2.query.policy.NegotiationTargetMapper, \
+  pkg.edu.uiuc.cs.TrustBuilder2.query.policy.PolicyManager
+
+# ProfileManager stuff.  
+# 
+# The first key sets the directory that the ProfileManager will scan
+# for loader files.  The second key tells the ProfileManager to load
+# plug-ins capable of pulling in uncertified credentials and uncertified
+# claims from disk.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.query.profile.ProfileManager.loaderFileDir = \
+  ..\\..\\..\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\server\\profile_loaders
+pkg.edu.uiuc.cs.TrustBuilder2.query.profile.ProfileManager.loadLoaders = \
+  pkg.edu.uiuc.cs.TrustBuilder2.query.profile.ClaimLoader, \
+  pkg.edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+
+# NegotiationTargetMapper stuff
+#
+# This tells the NegotiationTargetMapper where to look for the file
+# binding NegotiationTarget names to the policies protecting those
+# negotiation targets.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.query.policy.NegotiationTargetMapper.mapFile = \
+  ..\\..\\..\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\server\\mapfile.properties
+
+# Policy Manager stuff
+#
+# Again, the first key tells the PolicyManager where to search for
+# loader files.  The second key loads a plug-in that can read
+# Clouseau policies from disk.
+#
+pkg.edu.uiuc.cs.TrustBuilder2.query.policy.PolicyManager.loaderFileDir = \
+  ..\\..\\..\\Users\\filo\\eclipse_workspace\\STSNegotiation\\src\\config\\server\\policy_loaders
+pkg.edu.uiuc.cs.TrustBuilder2.query.policy.PolicyManager.loadLoaders = \
+  pkg.edu.uiuc.cs.TrustBuilder2.query.policy.JessPolicyFlatFileLoader

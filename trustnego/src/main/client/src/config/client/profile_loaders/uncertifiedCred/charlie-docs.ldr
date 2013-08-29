@@ -1,0 +1,7 @@
+loaderClass = pkg.edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = O=Acme Fabrication,C=USA
+subject = CN=Charlie,O=Acme Springfield,C=USA
+attr1 = Type
+value1 = Sensitive Document Training
+rid = docs_uncert
+pid = policy_springfield_service

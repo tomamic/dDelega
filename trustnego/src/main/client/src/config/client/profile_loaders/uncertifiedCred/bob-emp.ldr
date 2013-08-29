@@ -1,0 +1,10 @@
+loaderClass = pkg.edu.uiuc.cs.TrustBuilder2.test.UncertifiedCredentialLoader
+issuer = O=Acme Springfield,C=USA
+subject = CN=Bob,O=Acme Springfield,C=USA
+attr1 = Type
+value1 = Employee
+attr2 = EmpType
+value2 = FTE
+attr3 = Org
+value3 = 2460
+rid = bob_uncert
